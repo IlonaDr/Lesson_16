@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Homework</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">ФОРМИ</header>
+      <main class="page">
+         <div class="form">
+            <h1 class="title">Заповніть форму для участі у конкурсі</h1>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="GET">
+               <div class="form__line">
+                  <label class="form__label" for="name">Назвіть Ваше ім'я</label>
+                  <input id="name" class="form__input" tabindex="2" required placeholder="Назвіть Ваше ім'я"
+                     autocomplete="off" name="name" type="text">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="age">Назвіть Ваш вік</label>
+                  <input id="age" class="form__input" tabindex="1" required placeholder="Назвіть Ваш вік"
+                     autocomplete="off" name="age" type="text">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="phone">Введіть Ваш телефон</label>
+                  <input id="phone" class="form__input" required placeholder="Введіть Ваш телефон" autocomplete="off"
+                     name="phone" type="tel">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="mail">Введіть Вашу пошту</label>
+                  <input id="mail" class="form__input" placeholder="Введіть Вашу пошту" autocomplete="off" name="mail"
+                     type="email">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="pass">Введіть Ваш пароль</label>
+                  <input id="pass" class="form__input" required placeholder="Введіть Ваш пароль" autocomplete="off"
+                     name="pass" type="password">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="digi">Введіть кількість приймаючих участь</label>
+                  <input id="digi" class="form__input" required placeholder="Введіть Ваше число" autocomplete="off"
+                     name="digi" type="number">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="color">Виберіть колір медалі</label>
+                  <input id="color" class="form__input" value="#ffffff" autocomplete="off" name="color" type="color">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="search">Введіть назву породи</label>
+                  <input id="search" class="form__input" required placeholder="Введіть Ваш запит" autocomplete="off"
+                     name="search" type="search">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="date">Введіть дату народження</label>
+                  <input id="date" class="form__input" required autocomplete="off" name="date" type="date">
+               </div>
+               <div class="form__line">
+                  <label class="form__label" for="range">Оцініть рівень підготовки</label>
+                  <input id="range" class="form__input" autocomplete="off" name="range" type="range">
+                  <ol class="form__list">
+                     <li class="form__item">1</li>
+                     <li class="form__item">2</li>
+                     <li class="form__item">3</li>
+                     <li class="form__item">4</li>
+                     <li class="form__item">5</li>
+                  </ol>
+               </div>
+               <div class="form__line">
+                  <div class="form__title">Чи брали Ви участь у попередніх конкурсах?</div>
+                  <input id="yes" class="form__input form__input-chk" checked name="yes" type="checkbox">
+                  <label class="form__label label" for="yes">Так</label>
+                  <input id="no" class="form__input form__input-chk" name="no" type="checkbox">
+                  <label class="form__label label" for="no">Ні</label>
+                  <input id="not" class="form__input form__input-chk" name="not" type="checkbox">
+                  <label class="form__label label" for="not">Не пам'ятаю</label>
+               </div>
+               <div class="form__line">
+                  <div class="form__title">Тварина, яка приймає участь</div>
+                  <div class="form__radio">
+                     <input id="pet-01" checked class="form__input form__input-radio" required value="cat" name="pet"
+                        type="radio">
+                     <label class="form__label label" for="pet-01">Кішка</label>
+                  </div>
+                  <div class="form__radio">
+                     <input id="pet-02" class="form__input form__input-radio" required value="dog" name="pet"
+                        type="radio">
+                     <label class="form__label label" for="pet-02">Собака</label>
+                  </div>
+                  <div class="form__radio">
+                     <input id="pet-03" class="form__input form__input-radio" required value="perrot" name="pet"
+                        type="radio">
+                     <label class="form__label label" for="pet-03">Папуга</label>
+                  </div>
+               </div>
+               <div class="form__line">
+                  <div class="form__title">Додайте фото з Вашим улюбленцем</div>
+                  <input class="form__input" required multiple name="file" type="file">
+               </div>
+               <div class="form__line">
+                  <div class="form__title">Опишіть якусь смішну історію</div>
+                  <textarea name="message" autocomplete="off" placeholder="Дуже смішна історія..."
+                     class="form__area"></textarea>
+               </div>
+               <div class="form__line">
+                  <div class="form__title">Чи хотіли б Ви ще когось приручити?</div>
+                  <select multiple name="list">
+                     <option value="1">Кіт</option>
+                     <option value="2">Собака</option>
+                     <option value="3">Папуга</option>
+                     <option value="4">Хом'як</option>
+                     <option selected value="5">Нікого</option>
+                  </select>
+               </div>
+               <div class="form__line">
+                  <div class="form__title">Чи сподобалася Вам анкета?</div>
+                  <div class="checkbox">
+                     <input id="true" type="checkbox" value="yes" name="chek" class="checkbox__input">
+                     <label class="checkbox__label" for="true"><span class="checkbox__text">Так</span></label>
+                  </div>
+                  <div class="checkbox">
+                     <input id="false" type="checkbox" value="no" name="chek" class="checkbox__input">
+                     <label class="checkbox__label" for="false"><span class="checkbox__text">Ні</span></label>
+                  </div>
+                  <div class="checkbox">
+                     <input id="error" type="checkbox" value="yes-no" name="chek" class="checkbox__input">
+                     <label class="checkbox__label" for="error"><span class="checkbox__text">Не
+                           впевнений(а)</span></label>
+                  </div>
+               </div>
+               <div class="form__line">
+                  <button class="form__button" type="submit">Відправлення</button>
+               </div>
+            </form>
+         </div>
+      </main>
+      <footer class="footer"></footer>
+   </div>
+</body>
+
+</html>
